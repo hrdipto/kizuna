@@ -17,15 +17,19 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  height: 80px;
 }
 
 .logo {
   width: 80px;
   height: auto;
+  margin-left: 5%;
 }
 
 .nav ul {
   list-style-type: none;
+  margin-right: 5%;
+  margin-bottom: 0;
 }
 
 .nav ul li {
@@ -38,11 +42,12 @@
   color: #000;
 }
 
-
 /********************** HERO **********************/
 .hero {
-  background-image: url("/web-bg.jpeg");
+  position: relative;
+  background-image: url('/web-bg.jpeg');
   background-size: cover;
+  height: calc(100vh - 80px);
 }
 
 .hero .title {
@@ -54,53 +59,131 @@
 }
 
 .hero .title h1 {
+  font-size: 3rem; /* increase font size */
+  font-weight: bold; /* add bold font weight */
+  margin-bottom: 0.5rem; /* add some spacing below the heading */
+  text-align: center; /* center the text */
 }
 
-.hero .title .btn {
+.hero .title p {
+  font-size: 1.5rem; /* increase font size */
+  font-weight: normal; /* use normal font weight */
+  margin-bottom: 2rem; /* add more spacing below the paragraph */
+  text-align: center; /* center the text */
+  color: #666; /* add a darker color to the text */
+}
+
+.hero .title h1 {
+}
+
+/* .btn {
   background-color: #888;
   padding: 10px 10px;
   border-radius: 20px;
 
+} */
+
+.btn {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
+.btn:focus {
+  text-decoration: none;
+}
 
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.btn:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 12px 50px;
+  }
+}
 /********************** GAME **********************/
 
 .game {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.game_section {
+  background-color: #000;
   color: #fff;
-  max-width: 50%;
+  padding: 50px;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+.game_image {
+  width: 50%;
 }
 
-.description a {
+.game_section {
+  width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: flex-start;
+  padding: 0 50px;
 }
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+.game_section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.game_section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/********************** support **********************/
+.support {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.support_section {
+  margin-left: 5%;
+}
+
+.support_button {
+  margin-right: 5%;
 }
 
 .code {
@@ -319,13 +402,46 @@
   }
 }
 
+/********************* FOOTER ***********************/
+.footer {
+  background-color: #000;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
+
+.footer ul li a svg {
+  stroke: #fff;
+}
+
+.copyright {
+  margin-right: 5%;
+}
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
 }
-
 
 @keyframes rotate {
   from {

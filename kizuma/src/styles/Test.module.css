@@ -1,0 +1,111 @@
+/* Style .navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav img {
+  height: 60px;
+  margin-left: 30px;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav .social-media {
+  display: flex;
+}
+
+/* Style hero section */
+.hero {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://picsum.photos/id/1005/2000/1200');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffcc00;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #ff9900;
+}
+
+/* Style game section */
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.game_section {
+  width: 50%;
+  padding: 50px;
+}
+
+.game h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.game p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Style image gallery */
+.image-gallery {
+  width: 50%;
+}
+
+.image-gallery-slide img {
+  height: 400px;
+}

@@ -186,7 +186,7 @@ export default function Home() {
           <div className={styles.game_section}>
             <h2>ShapeShifter</h2>
             <p>
-              Get ready to shape your way to victory with "ShapeShifter" - the ultimate
+              Get ready to shape your way to victory with &quot;ShapeShifter&quot; - the ultimate
               hyper-casual puzzle game! Challenge your creativity and spatial reasoning skills
               by transforming shapes to fit designated spaces or match specific patters.
               Download now and take on new obstacles and challenges with each level.

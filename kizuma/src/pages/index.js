@@ -12,6 +12,7 @@ import {
   BrandYoutube,
   BrandInstagram,
   BrandLinkedin,
+  Bold,
 } from 'tabler-icons-react';
 
 const images = [
@@ -163,11 +164,10 @@ export default function Home() {
 
         <section className={styles.hero}>
           <div className={styles.title}>
-            <h1>Kizuna</h1>
+            <h1 style = {{color : "#fff", fontFamily: 'Delicious_Handrawn', fontSize: '70px'}}>Kizuna</h1>
             <h1>Lab</h1>
-            <p>
-              Makers of your favorite games like: Slice It All, Pancake Art,
-              Volleybeans and Farm It.
+            <p style = {{fontWeight : 'Bold', fontSize : '30px'}}>
+                  Makers of Your Favorite Games
             </p>
             <a href={'#games'} className={styles.btn}>
               DISCOVER OUR GAMES
@@ -186,17 +186,10 @@ export default function Home() {
           <div className={styles.game_section}>
             <h2>ShapeShifter</h2>
             <p>
-              "Shapeshifter" is a hyper casual puzzle game where the player must
-              shift and morph various shapes to progress through each level. The
-              gameplay involves transforming the shape of objects by dragging
-              and dropping their edges to fit into designated spaces or match
-              specific patterns. Each level introduces new challenges such as
-              limited moves, locked shapes, and obstacles that require careful
-              manipulation to overcome. The game's difficulty increases with
-              each level, testing the player's spatial reasoning skills and
-              creativity. With intuitive controls and a captivating soundtrack,
-              "Shapeshifter" provides a fun and engaging gameplay experience for
-              puzzle enthusiasts of all ages.
+              Get ready to shape your way to victory with "ShapeShifter" - the ultimate
+              hyper-casual puzzle game! Challenge your creativity and spatial reasoning skills
+              by transforming shapes to fit designated spaces or match specific patters.
+              Download now and take on new obstacles and challenges with each level.
             </p>
           </div>
         </section>
@@ -214,16 +207,11 @@ export default function Home() {
           <div className={styles.game_section}>
             <h2>Space Hopper</h2>
             <p>
-              Space Hopper is a thrilling hyper casual game set in a
-              post-apocalyptic sci-fi universe. Players take on the role of a
-              brave astronaut who must hop from one damaged spaceship to another
-              in order to survive. With each successful hop, players must
-              navigate through a variety of obstacles, such as broken machinery
-              and dangerous space debris. As they progress, players collect
-              valuable resources and power-ups to help them on their journey.
-              With its intuitive controls and addictive gameplay, Space Hopper
-              is the ultimate test of skill and agility in a universe where
-              danger lurks around every corner.
+              Get ready to hop for your life in Space Hopper! Navigate throught a post-
+              apocalyptic sci-fi universe, hopping from one damaged spaceship to the 
+              next while avoiding dangerous obstacles. With addictive gameplay and
+              intuitive controls, this hyper-casual game is the ultimate test of skill
+              and agility for brave astronaughts who dare to survive.
             </p>
           </div>
         </section>
@@ -241,16 +229,10 @@ export default function Home() {
           <div className={styles.game_section}>
             <h2>iPaint.io</h2>
             <p>
-              iPaint.io is a fun and engaging hyper casual game that is perfect
-              for people of all ages. In this game, players get to unleash their
-              creativity by painting various 3D objects with the right colors
-              from the given palette. With a user-friendly interface and
-              intuitive controls, players can easily choose the colors they need
-              and paint away to their heart's content. Whether they're painting
-              a cute animal, a vibrant flower, or a futuristic spaceship,
-              players will have a blast exploring their artistic side. With its
-              vibrant graphics and fun gameplay, iPaint.io is the perfect game
-              for kids who love to create and explore.
+              Let your creativity run wild with IPaint.io! Color stunning 3D objects with and
+              easy-to-use palette and intuitive controls. With vibrant graphics and fun gameplay,
+              this hyper-casual game is perfect for unleashing your inner artist,no matter your
+              age.
             </p>
           </div>
         </section>
@@ -268,17 +250,10 @@ export default function Home() {
           <div className={styles.game_section}>
             <h2>Lumera RemoveMakeUp</h2>
             <p>
-              Lumera RemoveMakeUp is an exciting hyper casual dress-up game that
-              has been created for the fashion brand Lumera. In this game,
-              players are tasked with removing makeup from various models using
-              the right tools. With a variety of tools at their disposal, such
-              as cotton pads, makeup remover, and facial cleanser, players must
-              carefully remove the makeup without damaging the model's skin.
-              With each successful removal, players earn points and progress to
-              the next level, where they will face new challenges and more
-              intricate makeup designs. With its sleek graphics and engaging
-              gameplay, Lumera RemoveMakeUp is the ultimate test of skill and
-              precision for fashion and beauty enthusiasts.
+              Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove 
+              makeup with precision using the right tools and unlock new challenges.
+              With sleek graphics and engaging gameplay, this hyper-casual game is 
+              perfect for fashion and beauty enthusiasts.
             </p>
           </div>
         </section>

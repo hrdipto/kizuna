@@ -45,15 +45,15 @@
 /********************** HERO **********************/
 .hero {
   position: relative;
-  background-image: url('/web-bg.jpeg');
+  background-image: url('/web-bg.jpg');
   background-size: cover;
-  height: calc(100vh - 80px);
+  height: calc(120vh - 80px);
 }
 
 .hero .title {
   display: flex;
   flex-direction: column;
-  color: #000;
+  color: #fff;
   align-items: center;
   padding: 10% 0;
 }
@@ -70,7 +70,7 @@
   font-weight: normal; /* use normal font weight */
   margin-bottom: 2rem; /* add more spacing below the paragraph */
   text-align: center; /* center the text */
-  color: #666; /* add a darker color to the text */
+  color: #fff; /* add a darker color to the text */
 }
 
 .hero .title h1 {
@@ -89,9 +89,9 @@
   background-image: none;
   border: 1px solid #000;
   border-radius: 4px;
-  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-shadow: #220126 4px 4px 0 0, #000 4px 4px 0 1px;
   box-sizing: border-box;
-  color: #fff;
+  color: #E80358;
   cursor: pointer;
   display: inline-block;
   font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
@@ -139,7 +139,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #000;
+  background-color: #411073;
   color: #fff;
   padding: 50px;
 }
@@ -170,7 +170,7 @@
 
 /********************** support **********************/
 .support {
-  background-color: #fff;
+  background-color: #5E17A6;
   display: flex;
   flex-direction: row;
   align-items: center;

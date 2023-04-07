@@ -164,7 +164,7 @@ export default function Home() {
 
         <section className={styles.hero}>
           <div className={styles.title}>
-            <h1 style = {{color : "#fff", fontFamily: 'Delicious_Handrawn', fontSize: '70px'}}>Kizuna</h1>
+            <h1 style = {{color : "#fff", fontFamily: 'Roboto', fontSize: '70px'}}>Kizuna</h1>
             <h1>Lab</h1>
             <p style = {{fontWeight : 'Bold', fontSize : '30px'}}>
                   Makers of Your Favorite Games

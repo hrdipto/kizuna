@@ -221,43 +221,49 @@ export default function Home() {
 
         {/* <hr></hr> */}
 
-        <section className={styles.game2}>
-          <div className={styles.column_portrait}>
-          <div class="image-wrapper">
-              <img src="iphone13.png" alt="iphone13" />
-              <img src="loading_icon.gif" alt="loading_icon" />
-            </div>
-          <div className={styles.game_text_floatleft}>
-            <h2>Space Hopper</h2>
-            <p>
-              Get ready to hop for your life in Space Hopper! Navigate throught a post-
-              apocalyptic sci-fi universe, hopping from one damaged spaceship to the
-              next while avoiding dangerous obstacles. With addictive gameplay and
-              intuitive controls, this hyper-casual game is the ultimate test of skill
-              and agility for brave astronaughts who dare to survive.
-            </p>
-          </div>
+        <section >
+        <div >
+          <div className={styles.game2}>
+              <div className={styles.game_text_floatright}>
+                <h2>Shape Shifter</h2>
+                  <p>
+                    Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove
+                    makeup with precision using the right tools and unlock new challenges.
+                    With sleek graphics and engaging gameplay, this hyper-casual game is
+                    perfect for fashion and beauty enthusiasts.
+                  </p>
+                </div>
+                <div className={styles.columnright}>
+                  <div >
+                    <img className={styles.iphone_landscape} src="iphone13.png" alt="iphone13" />
+                    <img className={styles.landscapegif} src="khelo_gif.gif" alt="loading_icon" />
+                    
+                  </div>
+                </div>
+              </div>
           </div>
         </section>
 
 
         <section className={styles.game3}>
           <div className={styles.column_portrait}>
-          <div class="image-wrapper">
-              <img src="iphone13.png" alt="iphone13" />
-              <img src="loading_icon.gif" alt="loading_icon" />
+            <div >
+              <img className={styles.iphoneportrait} src="iphone13.png" alt="iphone13" />
+              <img className={styles.portraitgif} src="space_hopper_gif.gif" alt="loading_icon" />
+              <img className={styles.spacehopperplane} src="loading_icon.gif" alt="loading_icon" />
             </div>
+          </div>
           <div className={styles.game_text_floatleft}>
-            <h2>iPaint.io</h2>
+            <h2>IPaint.io</h2>
             <p>
-              Let your creativity run wild with IPaint.io! Color stunning 3D objects with and
-              easy-to-use palette and intuitive controls. With vibrant graphics and fun gameplay,
-              this hyper-casual game is perfect for unleashing your inner artist,no matter your
-              age.
+              Get ready to shape your way to victory with ShapeShifter - the ultimate
+              hyper-casual puzzle game! Challenge your creativity and spatial reasoning skills
+              by transforming shapes to fit designated spaces or match specific patters.
+              Download now and take on new obstacles and challenges with each level.
             </p>
           </div>
-          </div>
         </section>
+
 
 
         {/* Khelo Section*/}

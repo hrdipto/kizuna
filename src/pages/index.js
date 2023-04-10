@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Navigation from '../components/navigation/navigation';
 import { Navbar } from 'react-bootstrap';
-import logo from '../../public/logo.png';
+import logo from '../../public/logoo.png';
 import Link from 'next/link';
 import ImageGallery from 'react-image-gallery';
 
@@ -17,17 +17,26 @@ import {
 
 const images = [
   {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    original: 'logoo.png',
+    thumbnail: 'logoo.png',
   },
   {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
+    original: 'background1.png',
+    thumbnail: 'background1.png',
   },
   {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    original: 'spacehopper1.png',
+    thumbnail: 'spacehopper1.png',
   },
+  {
+    original: 'iphone13.png',
+    thumbnail: 'iphone13.png',
+  },
+  {
+    original: 'loading_icon.gif',
+    thumbnail: 'loading_icon.gif',
+  }
+
 ];
 const spaceHopper = [
   {
@@ -164,69 +173,58 @@ export default function Home() {
 
         <section className={styles.hero}>
           <div className={styles.title}>
-            <h1 style = {{color : "#fff", fontFamily: 'Roboto', fontSize: '70px'}}>Kizuna</h1>
-            <h1>Lab</h1>
-            <p style = {{fontWeight : 'Bold', fontSize : '30px'}}>
-                  Makers of Your Favorite Games
-            </p>
-            <a href={'#games'} className={styles.btn}>
-              DISCOVER OUR GAMES
-            </a>
+
           </div>
         </section>
 
-        <section id={'games'} className={styles.game}>
-          <div className={styles.game_image}>
-            <ImageGallery
-              items={spaceShifter}
-              showNav={false}
-              showPlayButton={false}
-            />
+        <section className={styles.game1}>
+
+          <div className={styles.column}>
+            <div class="image-wrapper1">
+              <img src="iphone13.png" alt="iphone13" />
+              <img src="loading_icon.gif" alt="loading_icon" />
+            </div>
           </div>
-          <div className={styles.game_section}>
+          <div className={styles.game1_text}>
             <h2>ShapeShifter</h2>
             <p>
-              Get ready to shape your way to victory with &quot;ShapeShifter&quot; - the ultimate
+              Get ready to shape your way to victory with ShapeShifter - the ultimate
               hyper-casual puzzle game! Challenge your creativity and spatial reasoning skills
               by transforming shapes to fit designated spaces or match specific patters.
               Download now and take on new obstacles and challenges with each level.
             </p>
           </div>
         </section>
-
         <hr></hr>
 
-        <section className={styles.game}>
-          <div className={styles.game_image}>
-            <ImageGallery
-              items={spaceHopper}
-              showNav={false}
-              showPlayButton={false}
-            />
-          </div>
-          <div className={styles.game_section}>
+        <section className={styles.game2}>
+          <div className={styles.column}>
+          <div class="image-wrapper">
+              <img src="iphone13.png" alt="iphone13" />
+              <img src="loading_icon.gif" alt="loading_icon" />
+            </div>
+          <div className={styles.game1_text}>
             <h2>Space Hopper</h2>
             <p>
               Get ready to hop for your life in Space Hopper! Navigate throught a post-
-              apocalyptic sci-fi universe, hopping from one damaged spaceship to the 
+              apocalyptic sci-fi universe, hopping from one damaged spaceship to the
               next while avoiding dangerous obstacles. With addictive gameplay and
               intuitive controls, this hyper-casual game is the ultimate test of skill
               and agility for brave astronaughts who dare to survive.
             </p>
           </div>
+          </div>
         </section>
 
         <hr></hr>
 
-        <section className={styles.game}>
-          <div className={styles.game_image}>
-            <ImageGallery
-              items={iPaint}
-              showNav={false}
-              showPlayButton={false}
-            />
-          </div>
-          <div className={styles.game_section}>
+        <section className={styles.game3}>
+          <div className={styles.column}>
+          <div class="image-wrapper">
+              <img src="iphone13.png" alt="iphone13" />
+              <img src="loading_icon.gif" alt="loading_icon" />
+            </div>
+          <div className={styles.game1_text}>
             <h2>iPaint.io</h2>
             <p>
               Let your creativity run wild with IPaint.io! Color stunning 3D objects with and
@@ -235,24 +233,31 @@ export default function Home() {
               age.
             </p>
           </div>
+          </div>
         </section>
 
         <hr></hr>
 
-        <section className={styles.game}>
-          <div className={styles.game_image}>
-            <ImageGallery
-              items={removeMakeup}
-              showNav={false}
-              showPlayButton={false}
-            />
-          </div>
-          <div className={styles.game_section}>
-            <h2>Lumera RemoveMakeUp</h2>
+        <section className={styles.game4}>
+          <div className={styles.game1_text}>
+            <h2>Khelo</h2>
             <p>
-              Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove 
+              Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove
               makeup with precision using the right tools and unlock new challenges.
-              With sleek graphics and engaging gameplay, this hyper-casual game is 
+              With sleek graphics and engaging gameplay, this hyper-casual game is
+              perfect for fashion and beauty enthusiasts.
+            </p>
+          </div>
+        </section>
+
+
+        <section className={styles.game5}>
+          <div className={styles.game1_text}>
+            <h2>Khelo</h2>
+            <p>
+              Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove
+              makeup with precision using the right tools and unlock new challenges.
+              With sleek graphics and engaging gameplay, this hyper-casual game is
               perfect for fashion and beauty enthusiasts.
             </p>
           </div>
@@ -267,8 +272,8 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.support_button}>
-            <a href={'mailto:ashif.kizunalab@gmail.com'} className={styles.btn}>
-              CONTACT US
+            <a href={'PrivacyPolicy'} className={styles.btn_text}>
+              Privacy Policy
             </a>
           </div>
         </section>

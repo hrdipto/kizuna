@@ -329,15 +329,18 @@ export default function Home() {
               ashif.kizunalab@gmail.com
             </p>
           </div>
-          <div className={styles.support_button}>
-            <a href={'PrivacyPolicy'} className={styles.btn_text}>
-              Privacy Policy
+          
+            {/* <a href={'PrivacyPolicy'} className={styles.btn_text}> */}
+            <a href={'PrivacyPolicy'} >
+            <div className={styles.support_button}>
+              Contact Us</div>
             </a>
-          </div>
+          
         </section>
       </main>
 
       <footer className={styles.footer}>
+        
         <ul>
           <li>
             <Link
@@ -363,9 +366,15 @@ export default function Home() {
           </li>
         </ul>
 
-        <p className={styles.copyright}>
-          &copy; Copyright 2023 Kizuna Lab. All rights reserved.
-        </p>
+        <p className={styles.footer_copyright}>
+          &copy; Copyright 2023 KizunaLab. All rights reserved.
+        </p> 
+        
+        <Link href={'#'} className={styles.privacypolicy}>
+        Privacy Policy
+
+            </Link>
+         
       </footer>
     </>
   );

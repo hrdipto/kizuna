@@ -153,7 +153,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center; 
-
 }
 
 
@@ -245,6 +244,28 @@ transform: scale(1.4) translate(-75px, 350px);
   
 }
 
+.image_btns {
+  /* display: flex; */
+  /* justify-content: center; */
+  margin-top: 50px;
+}
+
+
+.image_btns button:nth-child(1) {
+  margin-right: 30px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.image_btns button:nth-child(2) {
+  margin-left: 30px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+
 .column_portrait {
   width: 50%;
   display: flex;
@@ -302,7 +323,6 @@ transform: scale(1.2) ;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  margin: 0 15px;
   margin-bottom: 50px;
   font-family: 'Work Sans', sans-serif;
   font-size: 100;

@@ -51,6 +51,14 @@ const images = [
   {
     original: 'just_remove_girl.png',
     thumbnail: 'loading_icon.gif',
+  },
+  {
+    original: 'play_store_btn.png',
+    thumbnail: 'loading_icon.gif',
+  },
+  {
+    original: 'app_store_btn.png',
+    thumbnail: 'loading_icon.gif',
   }
 
 ];
@@ -216,6 +224,14 @@ export default function Home() {
               by transforming shapes to fit designated spaces or match specific patters.
               Download now and take on new obstacles and challenges with each level.
             </p>
+            <div className={styles.image_btns}>
+            <button >
+              <img src="app_store_btn.png"  alt="loading_icon"/>
+            </button> 
+            <button >
+              <img src="play_store_btn.png" alt="loading_icon" />
+            </button>
+            </div>
           </div>
         </section>
 
@@ -232,6 +248,14 @@ export default function Home() {
                     With sleek graphics and engaging gameplay, this hyper-casual game is
                     perfect for fashion and beauty enthusiasts.
                   </p>
+                  <div className={styles.image_btns}>
+            <button >
+              <img src="app_store_btn.png"  alt="loading_icon"/>
+            </button> 
+            <button >
+              <img src="play_store_btn.png" alt="loading_icon" />
+            </button>
+            </div>
                 </div>
                 <div className={styles.columnright}>
                   <div >
@@ -261,6 +285,14 @@ export default function Home() {
               by transforming shapes to fit designated spaces or match specific patters.
               Download now and take on new obstacles and challenges with each level.
             </p>
+            <div className={styles.image_btns}>
+            <button >
+              <img src="app_store_btn.png"  alt="loading_icon"/>
+            </button> 
+            <button >
+              <img src="play_store_btn.png" alt="loading_icon" />
+            </button>
+            </div>
           </div>
         </section>
 
@@ -282,6 +314,14 @@ export default function Home() {
                     With sleek graphics and engaging gameplay, this hyper-casual game is
                     perfect for fashion and beauty enthusiasts.
                   </p>
+                  <div className={styles.image_btns}>
+            <button >
+              <img src="app_store_btn.png"  alt="loading_icon"/>
+            </button> 
+            <button >
+              <img src="play_store_btn.png" alt="loading_icon" />
+            </button>
+            </div>
                 </div>
                 <div className={styles.columnright}>
                   <div >
@@ -315,6 +355,14 @@ export default function Home() {
                  With sleek graphics and engaging gameplay, this hyper-casual game is
                  perfect for fashion and beauty enthusiasts.
                  </p>
+                 <div className={styles.image_btns}>
+            <button >
+              <img src="app_store_btn.png"  alt="loading_icon"/>
+            </button> 
+            <button >
+              <img src="play_store_btn.png" alt="loading_icon" />
+            </button>
+            </div>
                </div>
              
              </div>

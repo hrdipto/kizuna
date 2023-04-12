@@ -27,6 +27,9 @@ const images = [
   {
     original: 'spacehopper1.png',
     thumbnail: 'spacehopper1.png',
+  }, {
+    original: 'space_hopper_logo_bg.png',
+    thumbnail: 'space_hopper_logo_bg.png',
   },
   {
     original: 'iphone13.png',
@@ -38,6 +41,22 @@ const images = [
   },
   {
     original: 'space_hopper_gif.gif',
+    thumbnail: 'loading_icon.gif',
+  },  
+  {
+    original: 'shape_shifter_gif.gif',
+    thumbnail: 'loading_icon.gif',
+  },  
+  {
+    original: 'Ipaint_painting_bg.png',
+    thumbnail: 'loading_icon.gif',
+  },,  
+  {
+    original: 'Ipaint_pumpkin.png',
+    thumbnail: 'loading_icon.gif',
+  },,  
+  {
+    original: 'Ipaint.gif',
     thumbnail: 'loading_icon.gif',
   },
   {
@@ -209,6 +228,10 @@ export default function Home() {
         {/* Space Hopper Section*/}
 
        <section className={styles.game1}>
+        <div>
+        <img className={styles.space_hopper_logo_bg} src="space_hopper_logo_bg.png"  alt="loading_icon"/>
+
+        </div>
           <div className={styles.column_portrait}>
             <div >
               <img className={styles.iphoneportrait} src="iphone13.png" alt="iphone13" />
@@ -260,7 +283,7 @@ export default function Home() {
                 <div className={styles.columnright}>
                   <div >
                     <img className={styles.iphone_landscape} src="iphone13.png" alt="iphone13" />
-                    <img className={styles.landscapegif} src="khelo_gif.gif" alt="loading_icon" />
+                    <img className={styles.landscapegif} src="shape_shifter_gif.gif" alt="loading_icon" />
                     
                   </div>
                 </div>
@@ -270,11 +293,14 @@ export default function Home() {
 
 
         <section className={styles.game3}>
+        <div>
+        <img className={styles.iPaint_painting_bg} src="iPaint_painting_bg.png" alt="loading_icon" />
+              <img className={styles.iPaint_pumpkin} src="iPaint_pumpkin.png" alt="loading_icon" />
+        </div>
           <div className={styles.column_portrait}>
             <div >
               <img className={styles.iphoneportrait} src="iphone13.png" alt="iphone13" />
-              <img className={styles.portraitgif} src="space_hopper_gif.gif" alt="loading_icon" />
-              <img className={styles.spacehopperplane} src="loading_icon.gif" alt="loading_icon" />
+              <img className={styles.portraitgif} src="Ipaint.gif" alt="loading_icon" />
             </div>
           </div>
           <div className={styles.game_text_floatleft}>

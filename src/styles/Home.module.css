@@ -146,8 +146,9 @@
 /********************** GAME **********************/
 .game1 {
   position: relative;
-  background-image: url('/Frame4.png');
-  background-size: cover;
+  /* background-image: url('/Frame4.png'); */
+  background-color: #F6E7E7;
+  /* background-size:cover; */
   height: 1100px;
   display: flex;
   flex-direction: row;
@@ -155,6 +156,13 @@
   align-items: center; 
 }
 
+.space_hopper_logo_bg
+{
+  position: absolute;
+  opacity: 5%;
+  transform: scale(1.2) translate(1150px);
+  
+}
 
 .spacehopperplane{
 
@@ -193,7 +201,8 @@ transform: scale(1.4) translate(-75px, 350px);
 
 .game3 {
   position: relative;
-  background-image: url('/Frame6.jpg');
+  /* background-image: url('/Frame6.jpg'); */
+  background-color: #EEEEEE;
   background-size: cover;
   height: 1100px;
   display: flex;
@@ -201,6 +210,18 @@ transform: scale(1.4) translate(-75px, 350px);
   justify-content: center;
   align-items: center;
 }
+
+.iPaint_painting_bg{
+  position: absolute;
+  transform: scale(1.1);
+}
+
+.iPaint_pumpkin{
+  position: absolute;
+  transform: translate(700px,-400px);
+
+}
+
 .game4 {
   position: relative;
   background-image: url('/khelo_bg_trees.png');

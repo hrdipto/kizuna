@@ -199,9 +199,9 @@ transform: scale(1.4) translate(-75px, 350px);
   align-items: center;
 }
 
+
 .game3 {
   position: relative;
-  /* background-image: url('/Frame6.jpg'); */
   background-color: #EEEEEE;
   background-size: cover;
   height: 1100px;
@@ -214,13 +214,20 @@ transform: scale(1.4) translate(-75px, 350px);
 .iPaint_painting_bg{
   position: absolute;
   transform: scale(1.1);
+  z-index: 0;
 }
 
+
+  
 .iPaint_pumpkin{
   position: absolute;
-  transform: translate(700px,-400px);
+  width: 10%;
+  transform: translate(700px,-400px);     
+  z-index: 0;
 
 }
+
+
 
 .game4 {
   position: relative;
@@ -238,17 +245,20 @@ transform: scale(1.4) translate(-75px, 350px);
 .khelo_bomb{
   position: absolute;
   transform: scale(1.2)  translate(-700px,-280px);
-  
+  z-index: 0;
 }
+
 
 .khelo_bird{
   position: absolute;
   transform: scale(1.2) translate(700px,280px);
-  
+  z-index: 0;  
 }
+
+
+
 .game5 {
   position: relative;
-  /* background-image: url('/Frame3.jpg'); */
   background-color: #F6D7EF;
   background-size: cover;
   height: 900px;
@@ -262,12 +272,10 @@ transform: scale(1.4) translate(-75px, 350px);
 .just_remove_girl{
   position: absolute;
   transform: scale(1.5)  translate(-520px,115px);
-  
+  z-index: 0;
 }
 
 .image_btns {
-  /* display: flex; */
-  /* justify-content: center; */
   margin-top: 50px;
 }
 
@@ -347,6 +355,7 @@ transform: scale(1.2) ;
   margin-bottom: 50px;
   font-family: 'Work Sans', sans-serif;
   font-size: 100;
+  z-index: 2;
 
 }
 

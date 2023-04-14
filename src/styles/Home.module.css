@@ -15,12 +15,13 @@
 }
 
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   background-color: #fff;
   height: 80px;
+  display: block;
+}
+
+.nav_row {
+  height: 100%;
 }
 
 .logo {
@@ -302,11 +303,9 @@ transform: scale(1.4) translate(-75px, 350px);
   align-items: center;
 }
 .column_langscape_left {
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 250px;
 
 }
 
@@ -373,7 +372,6 @@ transform: scale(1.2) ;
 }
 
 .game_text_floatright {
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -382,7 +380,6 @@ transform: scale(1.2) ;
   margin-bottom: 50px;
   font-family: 'Work Sans', sans-serif;
   font-size: 100;
-  margin-left: 250px;
 }
 
 .game_text_floatright h2 {
@@ -392,7 +389,6 @@ transform: scale(1.2) ;
     font-weight: bolder;
 }
 .game_text_floatright p {
-  margin-right: 250px;
   font-size: 18px;
   font-family: 'Work Sans', sans-serif;
   

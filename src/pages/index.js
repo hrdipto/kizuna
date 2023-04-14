@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Navigation from '../components/navigation/navigation';
-import { Navbar } from 'react-bootstrap';
+import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import logo from '../../public/logoo.png';
 import Link from 'next/link';
 import ImageGallery from 'react-image-gallery';
@@ -42,19 +42,19 @@ const images = [
   {
     original: 'space_hopper_gif.gif',
     thumbnail: 'loading_icon.gif',
-  },  
+  },
   {
     original: 'shape_shifter_gif.gif',
     thumbnail: 'loading_icon.gif',
-  },  
+  },
   {
     original: 'Ipaint_painting_bg.png',
     thumbnail: 'loading_icon.gif',
-  },,  
+  }, ,
   {
     original: 'Ipaint_pumpkin.png',
     thumbnail: 'loading_icon.gif',
-  },,  
+  }, ,
   {
     original: 'Ipaint.gif',
     thumbnail: 'loading_icon.gif',
@@ -172,66 +172,69 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <style>
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-</style>
+          @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
       </Head>
       <main className={styles.main}>
-        <navbar className={styles.nav}>
-          <Image src={logo} className={styles.logo} />
+        <Container>
+          <navbar className={styles.nav}>
+            <Row className={`${styles.nav_row} d-flex justify-content-between align-items-center`}>
+              <Col xs={12} md={2}>
 
-          <ul>
-            <li>
-              <a href={'#games'}>Games</a>
-            </li>
-            <li>
-              <a href={'#'}>Our Story</a>
-            </li>
-            <li>
-              <a href={'#support'}>Support</a>
-            </li>
-            <li>
-              <a href={'#'}>Contact</a>
-            </li>
-            <li>
-              <Link
-                href={'https://www.facebook.com/profile.php?id=100089688918315'}
-              >
-                <BrandFacebook size={24} color={'black'} />
-              </Link>
-            </li>
-            <li>
-              <Link href={'#'}>
-                <BrandYoutube size={24} color={'black'} />
-              </Link>
-            </li>
-            <li>
-              <Link href={'#'}>
-                <BrandInstagram size={24} color={'black'} />
-              </Link>
-            </li>
-            <li>
-              <Link href={'#'}>
-                <BrandLinkedin size={24} color={'black'} />
-              </Link>
-            </li>
-            {/* <li><Link href={"#"}>Games</Link></li> */}
-          </ul>
-        </navbar>
+                <Image src={logo} className={styles.logo} />
+              </Col>
+              <Col xs={12} md={8} className='d-flex justify-content-end'>
+                <ul>
+                  <li>
+                    <a href={'#games'}>Games</a>
+                  </li>
+                  <li>
+                    <a href={'#'}>Our Story</a>
+                  </li>
+                  <li>
+                    <a href={'#support'}>Support</a>
+                  </li>
+                  <li>
+                    <a href={'#'}>Contact</a>
+                  </li>
+                  <li>
+                    <Link
+                      href={'https://www.facebook.com/profile.php?id=100089688918315'}
+                    >
+                      <BrandFacebook size={24} color={'black'} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={'#'}>
+                      <BrandYoutube size={24} color={'black'} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={'#'}>
+                      <BrandInstagram size={24} color={'black'} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={'#'}>
+                      <BrandLinkedin size={24} color={'black'} />
+                    </Link>
+                  </li>
+                  {/* <li><Link href={"#"}>Games</Link></li> */}
+                </ul>
+              </Col>
+            </Row>
+          </navbar>
 
-        <section className={styles.hero}>
-          <div className={styles.title}>
-
-          </div>
-        </section>
+        </Container>
 
 
         {/* Space Hopper Section*/}
 
-       <section className={styles.game1}>
-        <div>
-        <img className={styles.space_hopper_logo_bg} src="space_hopper_logo_bg.png"  alt="loading_icon"/>
+        <section className={styles.game1}>
+          <div>
+            <img className={styles.space_hopper_logo_bg} src="space_hopper_logo_bg.png" alt="loading_icon" />
 
-        </div>
+          </div>
           <div className={styles.column_portrait}>
             <div >
               <img className={styles.iphoneportrait} src="iphone13.png" alt="iphone13" />
@@ -248,12 +251,12 @@ export default function Home() {
               Download now and take on new obstacles and challenges with each level.
             </p>
             <div className={styles.image_btns}>
-            <button >
-              <img src="app_store_btn.png"  alt="loading_icon"/>
-            </button> 
-            <button >
-              <img src="play_store_btn.png" alt="loading_icon" />
-            </button>
+              <button >
+                <img src="app_store_btn.png" alt="loading_icon" />
+              </button>
+              <button >
+                <img src="play_store_btn.png" alt="loading_icon" />
+              </button>
             </div>
           </div>
         </section>
@@ -261,42 +264,42 @@ export default function Home() {
         {/* <hr></hr> */}
 
         <section >
-        <div >
-          <div className={styles.game2}>
+          <div >
+            <div className={styles.game2}>
               <div className={styles.game_text_floatright}>
                 <h2>Shape Shifter</h2>
-                  <p>
-                    Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove
-                    makeup with precision using the right tools and unlock new challenges.
-                    With sleek graphics and engaging gameplay, this hyper-casual game is
-                    perfect for fashion and beauty enthusiasts.
-                  </p>
-                  <div className={styles.image_btns}>
-            <button >
-              <img src="app_store_btn.png"  alt="loading_icon"/>
-            </button> 
-            <button >
-              <img src="play_store_btn.png" alt="loading_icon" />
-            </button>
-            </div>
-                </div>
-                <div className={styles.columnright}>
-                  <div >
-                    <img className={styles.iphone_landscape} src="iphone13.png" alt="iphone13" />
-                    <img className={styles.landscapegif} src="shape_shifter_gif.gif" alt="loading_icon" />
-                    
-                  </div>
+                <p>
+                  Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove
+                  makeup with precision using the right tools and unlock new challenges.
+                  With sleek graphics and engaging gameplay, this hyper-casual game is
+                  perfect for fashion and beauty enthusiasts.
+                </p>
+                <div className={styles.image_btns}>
+                  <button >
+                    <img src="app_store_btn.png" alt="loading_icon" />
+                  </button>
+                  <button >
+                    <img src="play_store_btn.png" alt="loading_icon" />
+                  </button>
                 </div>
               </div>
+              <div className={styles.columnright}>
+                <div >
+                  <img className={styles.iphone_landscape} src="iphone13.png" alt="iphone13" />
+                  <img className={styles.landscapegif} src="shape_shifter_gif.gif" alt="loading_icon" />
+
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
 
         <section className={styles.game3}>
-        <div>
-        <img className={styles.iPaint_painting_bg} src="iPaint_painting_bg.png" alt="loading_icon" />
-              <img className={styles.iPaint_pumpkin} src="iPaint_pumpkin.png" alt="loading_icon" />
-        </div>
+          <div>
+            <img className={styles.iPaint_painting_bg} src="iPaint_painting_bg.png" alt="loading_icon" />
+            <img className={styles.iPaint_pumpkin} src="iPaint_pumpkin.png" alt="loading_icon" />
+          </div>
           <div className={styles.column_portrait}>
             <div >
               <img className={styles.iphoneportrait} src="iphone13.png" alt="iphone13" />
@@ -312,12 +315,12 @@ export default function Home() {
               Download now and take on new obstacles and challenges with each level.
             </p>
             <div className={styles.image_btns}>
-            <button >
-              <img src="app_store_btn.png"  alt="loading_icon"/>
-            </button> 
-            <button >
-              <img src="play_store_btn.png" alt="loading_icon" />
-            </button>
+              <button >
+                <img src="app_store_btn.png" alt="loading_icon" />
+              </button>
+              <button >
+                <img src="play_store_btn.png" alt="loading_icon" />
+              </button>
             </div>
           </div>
         </section>
@@ -327,13 +330,59 @@ export default function Home() {
         {/* Khelo Section*/}
 
         <section>
-       
-        <div >
-          <div className={styles.game4}>
-              <img  className={styles.khelo_bomb} src="khelo_bomb.png" alt="loading_icon" />
-              <img  className={styles.khelo_bird}src="khelo_bird.png" alt="loading_icon" />
+
+          <div >
+            <div className={styles.game4}>
+              <img className={styles.khelo_bomb} src="khelo_bomb.png" alt="loading_icon" />
+              <img className={styles.khelo_bird} src="khelo_bird.png" alt="loading_icon" />
               <div className={styles.game_text_floatright}>
                 <h2>Khelo</h2>
+                <p>
+                  Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove
+                  makeup with precision using the right tools and unlock new challenges.
+                  With sleek graphics and engaging gameplay, this hyper-casual game is
+                  perfect for fashion and beauty enthusiasts.
+                </p>
+                <div className={styles.image_btns}>
+                  <button >
+                    <img src="app_store_btn.png" alt="loading_icon" />
+                  </button>
+                  <button >
+                    <img src="play_store_btn.png" alt="loading_icon" />
+                  </button>
+                </div>
+              </div>
+              <div className={styles.columnright}>
+                <div >
+                  <img className={styles.iphone_landscape} src="iphone13.png" alt="iphone13" />
+                  <img className={styles.landscapegif} src="khelo_gif.gif" alt="loading_icon" />
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        {/* Just Remove Section*/}
+        <section>
+
+          <div >
+            <div className={styles.game5}>
+              <Container>
+                <Row>
+                {/* <img className={styles.just_remove_girl} src="just_remove_girl.png" alt="loading_icon" /> */}
+                <Col>
+                <div className={styles.column_langscape_left}>
+                  <div >
+                    <img className={styles.iphone_landscape} src="iphone13.png" alt="iphone13" />
+                    <img className={styles.landscapegif} src="just_remove_gif.gif" alt="loading_icon" />
+
+                  </div>
+                </div></Col>
+                <Col>
+                <div className={styles.game_text_floatright}>
+                  <h2>Just Remove</h2>
                   <p>
                     Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove
                     makeup with precision using the right tools and unlock new challenges.
@@ -341,59 +390,21 @@ export default function Home() {
                     perfect for fashion and beauty enthusiasts.
                   </p>
                   <div className={styles.image_btns}>
-            <button >
-              <img src="app_store_btn.png"  alt="loading_icon"/>
-            </button> 
-            <button >
-              <img src="play_store_btn.png" alt="loading_icon" />
-            </button>
-            </div>
-                </div>
-                <div className={styles.columnright}>
-                  <div >
-                    <img className={styles.iphone_landscape} src="iphone13.png" alt="iphone13" />
-                    <img className={styles.landscapegif} src="khelo_gif.gif" alt="loading_icon" />
-                    
+                    <button >
+                      <img src="app_store_btn.png" alt="loading_icon" />
+                    </button>
+                    <button >
+                      <img src="play_store_btn.png" alt="loading_icon" />
+                    </button>
                   </div>
                 </div>
-              </div>
-          </div>
-          
-        </section>
+                </Col>
 
-        {/* Just Remove Section*/}
-        <section>
-       
-       <div >
-         <div className={styles.game5}>
-             <img  className={styles.just_remove_girl} src="just_remove_girl.png" alt="loading_icon" />
-             <div className={styles.column_langscape_left}>
-                 <div >
-                   <img className={styles.iphone_landscape} src="iphone13.png" alt="iphone13" />
-                   <img className={styles.landscapegif} src="just_remove_gif.gif" alt="loading_icon" />
-                   
-                 </div>
-               </div><div className={styles.game_text_floatright}>
-               <h2>Just Remove</h2>
-                 <p>
-                 Unleash your inner makeup artist with Lumera RemoveMakeUp! Remove
-                 makeup with precision using the right tools and unlock new challenges.
-                 With sleek graphics and engaging gameplay, this hyper-casual game is
-                 perfect for fashion and beauty enthusiasts.
-                 </p>
-                 <div className={styles.image_btns}>
-            <button >
-              <img src="app_store_btn.png"  alt="loading_icon"/>
-            </button> 
-            <button >
-              <img src="play_store_btn.png" alt="loading_icon" />
-            </button>
+                </Row>
+              </Container>
             </div>
-               </div>
-             
-             </div>
-         </div>
-      </section>
+          </div>
+        </section>
 
         <section id={'support'} className={styles.support}>
           <div className={styles.support_section}>
@@ -403,18 +414,18 @@ export default function Home() {
               ashif.kizunalab@gmail.com
             </p>
           </div>
-          
-            {/* <a href={'PrivacyPolicy'} className={styles.btn_text}> */}
-            <a href={'PrivacyPolicy'} >
+
+          {/* <a href={'PrivacyPolicy'} className={styles.btn_text}> */}
+          <a href={'PrivacyPolicy'} >
             <div className={styles.support_button}>
               Contact Us</div>
-            </a>
-          
+          </a>
+
         </section>
       </main>
 
       <footer className={styles.footer}>
-        
+
         <ul>
           <li>
             <Link
@@ -442,14 +453,15 @@ export default function Home() {
 
         <p className={styles.footer_copyright}>
           &copy; Copyright 2023 KizunaLab. All rights reserved.
-        </p> 
-        
-        <Link href={'#'} className={styles.privacypolicy}>
-        Privacy Policy
+        </p>
 
-            </Link>
-         
+        <Link href={'#'} className={styles.privacypolicy}>
+          Privacy Policy
+
+        </Link>
+
       </footer>
     </>
+
   );
 }

@@ -59,7 +59,6 @@
   background-image: url('/background1.png');
   background-size: cover;
   height: 500px;
-  
 }
 .hero .title {
   display: flex;
@@ -102,7 +101,7 @@
   border-radius: 4px;
   box-shadow: #220126 4px 4px 0 0, #000 4px 4px 0 1px;
   box-sizing: border-box;
-  color: #E80358;
+  color: #e80358;
   cursor: pointer;
   display: inline-block;
   font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
@@ -146,47 +145,42 @@
 }
 /********************** GAME **********************/
 .game1 {
-  position: relative;
   /* background-image: url('/Frame4.png'); */
-  background-color: #F6E7E7;
+  background-color: #f6e7e7;
   /* background-size:cover; */
   height: 1100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; 
 }
 
-.space_hopper_logo_bg
-{
+.space_hopper_logo_bg {
   position: absolute;
-  opacity: 5%;
-  transform: scale(1.2) translate(1150px);
-  
+  opacity: 30%;
+  bottom: -263px;
+  width: 275px;
+  right: 20px;
 }
 
-.spacehopperplane{
-
-position: absolute;
-transform: scale(1.4) translate(-75px, 350px);
-
-}
-
-
-
-
-
-.landscapegif{
+.spacehopperplane {
   position: absolute;
-  transform: scaleX(.88) scaleY(0.86) translate(-627px, 130px);
+  z-index: 3;
+  width: 150px;
+  top: 485px;
+  left: 200px;
+}
+
+.landscapegif {
+  position: absolute;
+  transform: translate(-596px, 11px);
   border-radius: 55px;
+  width: 585px;
 }
-
 
 .portraitgif {
   position: absolute;
-  transform: scaleX(0.63) scaleY(0.65) translate(-655px, -364px);
-  border-radius: 75px;
+  z-index: 2;
+  border-radius: 47px;
+  width: 282px;
+  top: 10px;
+  left: 8px;
 }
 
 .game2 {
@@ -200,10 +194,9 @@ transform: scale(1.4) translate(-75px, 350px);
   align-items: center;
 }
 
-
 .game3 {
   position: relative;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   background-size: cover;
   height: 1100px;
   display: flex;
@@ -212,28 +205,23 @@ transform: scale(1.4) translate(-75px, 350px);
   align-items: center;
 }
 
-.iPaint_painting_bg{
+.iPaint_painting_bg {
   position: absolute;
   transform: scale(1.1);
   z-index: 0;
 }
 
-
-  
-.iPaint_pumpkin{
+.iPaint_pumpkin {
   position: absolute;
   width: 10%;
-  transform: translate(700px,-400px);     
+  transform: translate(700px, -400px);
   z-index: 0;
-
 }
-
-
 
 .game4 {
   position: relative;
   background-image: url('/khelo_bg_trees.png');
-  background-color: #FFFFB5;
+  background-color: #ffffb5;
   background-size: cover;
   height: 900px;
   display: flex;
@@ -242,25 +230,21 @@ transform: scale(1.4) translate(-75px, 350px);
   align-items: center;
 }
 
-
-.khelo_bomb{
+.khelo_bomb {
   position: absolute;
-  transform: scale(1.2)  translate(-700px,-280px);
+  transform: scale(1.2) translate(-700px, -280px);
   z-index: 0;
 }
 
-
-.khelo_bird{
+.khelo_bird {
   position: absolute;
-  transform: scale(1.2) translate(700px,280px);
-  z-index: 0;  
+  transform: scale(1.2) translate(700px, 280px);
+  z-index: 0;
 }
-
-
 
 .game5 {
   position: relative;
-  background-color: #F6D7EF;
+  background-color: #f6d7ef;
   background-size: cover;
   height: 900px;
   display: flex;
@@ -269,17 +253,15 @@ transform: scale(1.4) translate(-75px, 350px);
   align-items: center;
 }
 
-
-.just_remove_girl{
+.just_remove_girl {
   position: absolute;
-  transform: scale(1.5)  translate(-520px,115px);
+  transform: scale(1.5) translate(-520px, 115px);
   z-index: 0;
 }
 
 .image_btns {
   margin-top: 50px;
 }
-
 
 .image_btns button:nth-child(1) {
   margin-right: 30px;
@@ -295,27 +277,21 @@ transform: scale(1.4) translate(-75px, 350px);
   background-color: transparent;
 }
 
-
 .column_portrait {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 250px;
+}
+
+.spaceHopperText {
+  margin-top: 320px;
+}
+
+.ipaintportrait {
+  margin-top: -95px;
 }
 .column_langscape_left {
   display: flex;
   justify-content: center;
   align-items: center;
-
-}
-
-.columnright {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 250px;
-
 }
 
 .image-wrapper {
@@ -337,45 +313,36 @@ transform: scale(1.4) translate(-75px, 350px);
   left: 50%;
 }
 
-.iphone_landscape{
-transform: scale(1.2) rotate(-90deg);
+.shapeShifter {
+  position: relative;
 }
 
-.iphoneportrait{
-transform: scale(1.2) ;
+.iphone_landscape {
+}
 
+.iphoneportrait {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .game_text_floatleft {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  margin-bottom: 50px;
   font-family: 'Work Sans', sans-serif;
   font-size: 100;
-  z-index: 2;
-
 }
 
 .game_text_floatleft h2 {
   margin-bottom: 50px;
   font-size: 56px;
   font-family: 'Work Sans', sans-serif;
-    font-weight: bolder;
+  font-weight: bolder;
 }
 .game_text_floatleft p {
-  margin-right: 250px;
   font-size: 18px;
   font-family: 'Work Sans', sans-serif;
-  
 }
 
 .game_text_floatright {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: right;
   margin: 0 15px;
   margin-bottom: 50px;
   font-family: 'Work Sans', sans-serif;
@@ -386,39 +353,36 @@ transform: scale(1.2) ;
   margin-bottom: 50px;
   font-size: 56px;
   font-family: 'Work Sans', sans-serif;
-    font-weight: bolder;
+  font-weight: bolder;
 }
 .game_text_floatright p {
   font-size: 18px;
   font-family: 'Work Sans', sans-serif;
-  
 }
 
 /********************** support **********************/
 .support {
-  background-color: #ffffff ;
+  background-color: #ffffff;
   display: flex;
-   flex-direction: row;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between; 
-  height: 300px;  
-  margin-left: 250px;  
+  justify-content: space-between;
+  height: 300px;
+  margin-left: 250px;
   margin-right: 250px;
 }
 
-
-.support_section{
+.support_section {
   width: 50%;
 }
 
-
-.support_section h2{
+.support_section h2 {
   font-size: 56px;
   font-family: 'Work Sans', sans-serif;
   font-weight: bolder;
 }
 
-.support_section p{
+.support_section p {
   font-size: 18px;
   font-family: 'Work Sans', sans-serif;
 }
@@ -434,7 +398,7 @@ transform: scale(1.2) ;
   border-radius: 8px;
 }
 
-.btn_text{
+.btn_text {
   /* border: none; */
   /* background-color: inherit; */
   /* padding: 14px 28px;
@@ -443,10 +407,8 @@ transform: scale(1.2) ;
   /* display: inline-block; */
 }
 
-
-.privacypolicy{
+.privacypolicy {
   font-family: 'Work Sans', sans-serif;
-
 }
 
 .code {
